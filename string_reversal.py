@@ -20,9 +20,11 @@ def reverse_string(mystring):
         return []
 
     # BUG: the 0 in the range() method should be -1, given how range() works!
-    for i in range(len(mystring) - 1, 0, -1):
+
+    for i in range(len(mystring) - 1, -1, -1):
 
         reversed_string += mystring[i]
+
 
     return reversed_string
 
@@ -35,4 +37,6 @@ reversed = reverse_string(mystring)
 
 print("reversed string:    ", reversed, "\n")
 
-# this is a test for the conflict.89888
+
+# this is a test for the conflict
+
